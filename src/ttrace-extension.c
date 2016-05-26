@@ -17,7 +17,7 @@
 
 #include "ttrace-extension.h"
 
-void ttrace_extension_write(const char* msg)
+void ttrace_extension_write(const char* msg, size_t len)
 {
 	/* implement alternative logging feature to write msg */
 }

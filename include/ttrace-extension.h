@@ -18,11 +18,13 @@
 #ifndef _CDBG_TIZEN_TTRACE_EXTENSION_H_
 #define _CDBG_TIZEN_TTRACE_EXTENSION_H_
 
+#include <unistd.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif /* __cplusplus */
 
-void ttrace_extension_write();
+void ttrace_extension_write(const char* msg, size_t len);
 
 #ifdef __cplusplus
 }
